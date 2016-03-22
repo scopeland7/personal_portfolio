@@ -15,3 +15,27 @@
  */
 @import 'bootstrap';
 @import 'bootstrap-sprockets';
+
+body {
+	background-color: black;
+}
+
+#home {
+	text-align: center;
+}
+
+#small {
+	font-size: 48px;
+}
+
+#profile_pic {
+	display:block;
+	max-width: 30%;
+	height:auto;
+	margin: auto;
+	border-radius: 50%;
+}
+
+.center_text {
+	text-align: center;
+}

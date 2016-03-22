@@ -1,4 +1,26 @@
-<div class='jumbotron'>
-	<h1>Sam Copeland</h1>
-	<small><h3>Apprentice Web Developer</h3></small>
+<div class='jumbotron' id="home">
+	<div class='container'>
+		<h2 id="small">Sam Copeland <small>Apprentice Web Developer</small></h2>
+	</div>	
+</div>
+
+<div class='container'>
+	<div class="center_text">
+		<%= image_tag "profile_pic.jpg", alt: "Me!", id: 'profile_pic' %>
+	</div>
+</div>
+
+<div class='navbar-inverse navbar-fixed-bottom'>
+	<div class='container-fluid'>
+		<div class='center_text'>
+			<ul class='nav navbar-nav navbar-left'>
+				<li><%= link_to "Blog", blog_path %></li>
+				<li><%= link_to "Portfolio", projects_path %></li>
+			</ul>
+			<ul class='nav navbar-nav navbar-right'>
+				<li><%= link_to "About Me", about_path %></li>
+				<li><%= link_to "Contact Me", contact_path %></li>
+			</ul>
+		</div>
+	</div>
 </div>
