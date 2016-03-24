@@ -8,6 +8,22 @@
 </head>
 <body>
 
+<% if @hide == true %>
+<% else %>
+	<p class='pull-right'><%= link_to "Go Home", root_path %></p>
+<% end %>
+
+
+<div class='navbar-inverse navbar-fixed-bottom'>
+	<div class='container-fluid'>
+			<p class='navbar-text'><%= link_to "Blog", blog_path %></p>
+			<p class='navbar-text'><%= link_to "Portfolio", projects_path %></p>			
+			<div class='nav navbar-nav navbar-right'>
+				<p class='navbar-text'><%= link_to "About Me", about_path %></p>
+				<p class='navbar-text'><%= link_to "Contact Me", contact_path %></p>
+			</div>
+	</div>
+</div>
 
 <%= yield %>
 

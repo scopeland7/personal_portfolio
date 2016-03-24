@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    @hide = true
   end
 
   def about
